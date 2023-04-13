@@ -1,4 +1,5 @@
 package ru.netology.stats;
+
 public class StatsService {
     public long findsaleSum(long[] sale) {
         long saleSum = 0;
@@ -46,8 +47,8 @@ public class StatsService {
     public int findUnderAveramount(long[] sales) {
         long minSaleMonth = 0;
         long average = findaveramount(sales);
-        for (long sale: sales) {
-            if (sale< average) {
+        for (long sale : sales) {
+            if (sale < average) {
                 minSaleMonth++;
             }
         }
@@ -57,8 +58,8 @@ public class StatsService {
     public int findHigherAveramount(long[] sales) {
         long maxSaleMonth = 0;
         long average = findaveramount(sales);
-        for (long sale: sales) {
-            if (sale< average) {
+        for (long sale : sales) {
+            if (sale > average) {
                 maxSaleMonth++;
             }
         }
