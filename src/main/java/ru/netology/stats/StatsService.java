@@ -1,3 +1,4 @@
+package ru.netology.stats;
 public class StatsService {
     public long findsaleSum(long[] sale) {
         long saleSum = 0;
